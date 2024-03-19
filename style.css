@@ -2,7 +2,17 @@
     font-family: gilroy;
 
     src: url(./Gilroy-Regular.ttf);
+    /* src: url(./font/Gilroy-SemiBold.ttf); */
+    font-weight: normal;
+    
+}
+@font-face {
+    font-family: gilroy;
 
+    /* src: url(./Gilroy-Regular.ttf); */
+    src: url(./font/Gilroy-Bold.ttf);
+    font-weight: bold;
+    
 }
 *{
     padding: 0;

@@ -1,0 +1,319 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Black.ttf);
+    src: url(./Gilroy-BlackItalic.ttf);
+    src: url(./Gilroy-BoldItalic.ttf);
+    src: url(./Gilroy-ExtraBold.ttf);
+    src: url(./Gilroy-Bold.ttf);
+    src: url(./Gilroy-ExtraBoldItalic.ttf);
+    src: url(./Gilroy-Heavy.ttf);
+    src: url(./Gilroy-HeavyItalic.ttf);
+    src: url(./Gilroy-Light.ttf);
+    src: url(./Gilroy-LightItalic.ttf);
+    src: url(./Gilroy-Medium.ttf);
+    src: url(./Gilroy-MediumItalic.ttf);
+    src: url(./Gilroy-Regular.ttf);
+    src: url(./Gilroy-RegularItalic.ttf);
+    src: url(./Gilroy-SemiBold.ttf);
+    src: url(./Gilroy-SemiBoldItalic.ttf);
+    src: url(./Gilroy-Thin.ttf);
+    src: url(./Gilroy-ThinItalic.ttf);
+    src: url(./Gilroy-UltraLight.ttf);
+    src: url(./Gilroy-UltraLightItalic.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+body{
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#hellopage{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color:#151414;
+
+}
+#hellopage h1{
+    display: inline-block;
+    font-size: 720px;
+    letter-spacing: -40px;
+    font-weight: 900;
+    color: #F3C77C;
+}
+#animepage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 1s;
+    position: absolute;
+    z-index: 1;
+    background-color: #F3C77C;
+
+}
+#animepage img{
+    height: 150px;
+}
+#det1{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#151414;
+    text-align: center;
+}
+#det1 h1 span{
+    color: #F3C77C;
+    font-weight: 500;
+    font-size: 40px;
+    opacity: 0;
+
+}
+#det2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151414;
+    padding-bottom: 100px;
+}
+#det2 video{
+    width: 10%;
+    
+}
+#det3{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    background-color: #151414;
+}
+#det3 h1{
+   /* background-color: #fff; */
+    font-size: 200px;
+    line-height: 170px;
+    color: #0f0e0e;
+    /* position: absolute; */
+    width: 96%;
+    /* transform: translateX(2%); */
+    letter-spacing: 10px;
+    text-align:right;
+    
+    
+}
+/* #det3 h1 span{
+    font-style: italic;
+    font-weight: 500;
+} */
+#det4{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    background-color: #151414;
+    position: relative;
+}
+.vid{
+    width:48% ;
+    overflow: hidden;
+    transition: all ease 0.5s;
+    /* position: relative; */
+    top:30%
+    /* background-color: #151414; */
+}
+.vid video{
+    transition: all ease 0.5s;
+    width: 100%;
+    margin-bottom: 10px;
+    /* overflow: hidden; */
+}
+.vid img{
+    transition: all ease 0.5s;
+    width: 100%;
+    margin-bottom: 10px;
+    /* overflow: hidden; */
+}
+.vid h4{
+    color: white;
+    font-weight: 500;
+    /* top:100% */
+    /* z-index: 20; */
+}
+.vid:hover {
+    scale:0.93
+}
+.vid:hover video{
+    scale:1.2
+}
+.vid:hover img{
+    scale:1.3
+}
+#cur1{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #151414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    z-index: 2;
+    transform: translate(-50%,-50%) scale(1);
+    pointer-events: none;
+    
+}
+#det4 #circularimg{
+
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left:70%;
+    bottom: 76%;
+    /* top:10%; */
+    /* scale:0.7; */
+    /* background-color: #fff; */
+   
+    
+}
+#det4 #circularimg img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+#det4 #circularimg #arr{
+    height: 65px;
+    width: 30px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+@keyframes animations {
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg); 
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg); 
+    }
+}
+
+#cir{
+    animation-name: animations ;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#det5{
+    height: 200%;
+    width: 100%;
+    background-color: #151414;
+    position: relative;
+}
+
+/* .vid{
+    height: 50%;
+    width: 50%;
+} */
+
+#jar{
+    width:35% ;
+    position: absolute;
+    left: 60%;
+    top:-20%;
+    transition: all ease 0.5s;
+}
+#jar img{
+    width: 100%;
+    
+    
+    /* top:100% */
+}
+
+#trone{
+    width: 30%;
+    position: absolute;
+    left: 3%;
+    top:10%;
+    transition: all ease 0.5s;
+
+}
+#paris{
+
+    width: 50%;
+    position: absolute;
+    left: 45%;
+    /* right: 0; */
+    top:20%;
+    transition: all ease 0.5s;
+}
+#det6{
+    height: 65%;
+    width: 100%;
+    background-color: #151414;
+    position: relative;
+}
+#beev{
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top:-60%;
+    transition: all ease 0.5s;
+    
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: #9AC1CB;
+}
+#page2 h1{
+    color: #151414;
+    position: absolute;
+    transform: translateX(8%);
+    font-size: 600px;
+    font-weight: 600;
+    letter-spacing: -38px;
+    
+}
+svg{
+    background-color: #151414;
+    position: relative;
+    /* bottom: -10px; */
+    /* border: 10px solid black; */
+    margin: none;
+}
+#det7{
+    height: 100%;
+    width: 100%;
+    background-color: #151414;
+    /* position: relative; */
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 250px 250px 250px ;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+
+}
+#det7 img{
+    /* height: 70px; */
+    margin: 40px;
+}

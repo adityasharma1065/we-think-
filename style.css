@@ -1,25 +1,8 @@
 @font-face {
     font-family: gilroy;
-/*     src: url(./Gilroy-Black.ttf); */
-/*     src: url(./Gilroy-BlackItalic.ttf);/ */
-/*     src: url(./Gilroy-BoldItalic.ttf); */
-/*     src: url(./Gilroy-ExtraBold.ttf);/ */
-/*     src: url(./Gilroy-Bold.ttf); */
-/*     src: url(./Gilroy-ExtraBoldItalic.ttf); */
-/*     src: url(./Gilroy-Heavy.ttf); */
-/*     src: url(./Gilroy-HeavyItalic.ttf); */
-/*     src: url(./Gilroy-Light.ttf); */
-/*     src: url(./Gilroy-LightItalic.ttf); */
-/*     src: url(./Gilroy-Medium.ttf); */
-/*     src: url(./Gilroy-MediumItalic.ttf); */
+
     src: url(./Gilroy-Regular.ttf);
-/*     src: url(./Gilroy-RegularItalic.ttf); */
-/*     src: url(./Gilroy-SemiBold.ttf); */
-/*     src: url(./Gilroy-SemiBoldItalic.ttf); */
-/*     src: url(./Gilroy-Thin.ttf); */
-/*     src: url(./Gilroy-ThinItalic.ttf); */
-/*     src: url(./Gilroy-UltraLight.ttf); */
-/*     src: url(./Gilroy-UltraLightItalic.ttf); */
+
 }
 *{
     padding: 0;
